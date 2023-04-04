@@ -1,0 +1,25 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:unicorn/recommended"
+	],
+	"plugins": ["@typescript-eslint", "unicorn"],
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2020
+	},
+	"env": {
+		"browser": true,
+		"es2020": true,
+		"node": true
+	},
+	"rules": {
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"func-style": ["error", "declaration"],
+		"prefer-arrow-callback": ["error", { "allowUnboundThis": true }]
+	},
+	"ignorePatterns": ["*.d.ts"]
+}
